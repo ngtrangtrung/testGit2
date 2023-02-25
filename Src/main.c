@@ -1,4 +1,4 @@
-/*******************************************************************************
+	/*******************************************************************************
  *
  * Copyright (c) 2020
  * Lumi, JSC.
@@ -13,6 +13,10 @@
  * Last Changed:     $Date: 10/7/2020 $
  *
  ******************************************************************************/
+
+// 1234 Code
+
+
 #include "stm32f401re_rcc.h"
 #include "stm32f401re_gpio.h"
 #include "stm32f401re_spi.h"
@@ -387,6 +391,10 @@ void SPI1_IRQHandler(void)
 
 	if(SPI_I2S_GetITStatus(SPI1, SPI_I2S_IT_RXNE) == SET)
 	{
+		Recive_Data = Revice_Data_Slave(SPI1);
+		Recive_Data = Revice_Data_Slave(SPI1);
+		Recive_Data = Revice_Data_Slave(SPI1);
+		Recive_Data = Revice_Data_Slave(SPI1);
 		Recive_Data = Revice_Data_Slave(SPI1);
 	}
 
